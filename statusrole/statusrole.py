@@ -173,13 +173,13 @@ class StatusRole(commands.Cog):
         # Role assigned
         if assign:
             embed.title += "Added"
-            embed.color = discord.Color.green()
+            embed.color = discord.Colour.dark_theme()
             plaintext = f"StatusRole: {user.mention} custom status changed to `{status}` with emoji `{emoji}`, {role.mention} assigned"
 
         # Role removed
         else:
             embed.title += "Removed"
-            embed.color = discord.Color.red()
+            embed.color = discord.Colour.dark_theme()
             plaintext = f"StatusRole: {user.mention} custom status changed to `{status}` with emoji `{emoji}`, {role.mention} removed"
 
         if can_embed:
